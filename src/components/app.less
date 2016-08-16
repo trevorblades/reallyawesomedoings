@@ -1,3 +1,5 @@
+@import './members';
+
 .rad-app {
   height: 100vh;
   background-color: @gray-lightest;
@@ -54,50 +56,6 @@
     .rad-content-wrap {
       width: 70%;
       margin: 0 auto;
-    }
-  }
-  .rad-members {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: @padding-largest 0;
-    position: relative;
-    @media @tablet {
-      display: block;
-    }
-
-    .rad-member {
-      padding: 0 @padding-large;
-      border-radius: @border-radius-large;
-      @media @tablet {
-        padding: @padding-large 0;
-      }
-
-      h4, h5 {
-        margin: 0;
-      }
-      h5 {
-        margin-top: @padding-smallest;
-        a {
-          padding-left: @padding-large;
-          text-decoration: none;
-          position: relative;
-          img {
-            width: @padding-base;
-            height: @padding-base;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-          }
-        }
-      }
-      .rad-member-profile {
-        width: 6em;
-        margin-bottom: @padding-small;
-        border-radius: 50%;
-        box-shadow: @box-shadow-large;
-      }
     }
   }
 }
