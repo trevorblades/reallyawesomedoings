@@ -1,23 +1,13 @@
-
 .rad-members {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: @padding-largest 0;
+  margin-top: @padding-larger;
   position: relative;
-  @media @tablet {
-    display: block;
-  }
-
   .rad-member {
-    padding: 0 @padding-large;
+    display: inline-block;
+    vertical-align: top;
+    padding: @padding-base @padding-larger;
     border-radius: @border-radius-large;
-    @media @tablet {
-      padding: @padding-large 0;
-    }
-
     h4, h5 {
-      margin: 0;
+      margin-bottom: 0;
     }
     h5 {
       margin-top: @padding-smallest;

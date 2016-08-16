@@ -1,32 +1,38 @@
 var React = require('react');
 
-var members = [
-  {
+var members = {
+  miguel: {
     name: 'Miguel Barbosa',
-    slug: 'miguel',
     twitter: 'yeahfilms'
   },
-  {
+  trevor: {
     name: 'Trevor Blades',
-    slug: 'trevor',
     twitter: 'trevorblades'
   },
-  {
+  joe: {
+    name: 'Joseph Homsy',
+    twitter: 'thevoyager3'
+  },
+  marvin: {
     name: 'Marvin Sanchez',
-    slug: 'marvin',
     twitter: 'marvinsanchez'
+  },
+  murray: {
+    name: 'Matheson Murray',
+    twitter: 'mathesonmurray'
   }
-];
+};
 
 var Members = React.createClass({
   render: function() {
     return (
       <div className="rad-members">
-        {members.map(function(member, index) {
+        {Object.keys(members).map(function(key, index) {
+          var member = members[key];
           return (
             <div className="rad-member" key={index}>
               <img className="rad-member-profile"
-                  src={'assets/members/' + member.slug + '.jpg'}/>
+                  src={'assets/members/' + key + '.jpg'}/>
               <h4>{member.name}</h4>
               <h5>
                 <a href={'https://twitter.com/' + member.twitter}
