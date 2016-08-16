@@ -44,7 +44,8 @@
   }
   .rad-content {
     padding: @padding-largest * 2;
-    background-color: @brand-secondary;
+    box-shadow: @box-shadow-large;
+    background-color: @gray-lightest;
     text-align: center;
     position: relative;
     @media @tablet {
@@ -60,17 +61,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: @padding-largest;
-    padding-bottom: @padding-largest;
     position: relative;
-    &:after {
-      content: '';
-      width: 50%;
-      border-bottom: 2px solid @gray-darker;
-      position: absolute;
-      bottom: 0;
-      left: 25%;
-    }
-
     .rad-member {
       border-radius: @border-radius-large;
       h4, h5 {
@@ -96,6 +87,7 @@
         width: 6em;
         margin-bottom: @padding-small;
         border-radius: 50%;
+        box-shadow: @box-shadow-large;
       }
     }
   }
