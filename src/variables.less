@@ -7,8 +7,21 @@
 @gray-darker: darken(white, 85%); // #262626
 @gray-darkest: darken(white, 95%); // #0d0d0d
 
+// Colours
+@brand-primary: #3ab0fc;
+@brand-secondary: #ace85b;
+
 // Font families
 @font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+
+// Padding
+@padding-base: 1.125em;
+@padding-small: @padding-base / 1.5; // 0.75em
+@padding-smaller: @padding-small * 0.8; // 0.6em
+@padding-smallest: @padding-smaller / 3; // 0.2em
+@padding-large: @padding-smallest * 8.75; // 1.75em
+@padding-larger: @padding-small * 3; // 2.25em
+@padding-largest: @padding-larger / 0.75; // 3em
 
 // Border radii
 @border-radius-small: 2px;
@@ -22,3 +35,10 @@
 @transition-duration-fast: 100ms;
 @transition-duration-medium: 300ms;
 @transition-duration-slow: 800ms;
+
+// Media query breakpoints
+@desktop-large: ~'only screen and (max-width: 1280px)';
+@desktop: ~'only screen and (max-width: 1024px)';
+@tablet: ~'only screen and (max-width: 768px)';
+@tablet-small: ~'only screen and (max-width: 600px)';
+@mobile: ~'only screen and (max-width: 480px)';

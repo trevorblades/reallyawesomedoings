@@ -1,12 +1,11 @@
 {
-  "name": "starter",
-  "version": "1.0.1",
-  "description": "A simple React static site development boilerplate",
+  "name": "reallyawesomedoings",
+  "version": "0.0.0",
   "author": "Trevor Blades",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trevorblades/starter.git"
+    "url": "git+https://github.com/trevorblades/reallyawesomedoings.git"
   },
   "scripts": {
     "start": "gulp dev",

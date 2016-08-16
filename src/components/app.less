@@ -1,0 +1,102 @@
+.rad-app {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+  .rad-cover {
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    .rad-cover-logo {
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, -150px) scale(1.5);
+      transform-style: preserve-3d;
+      &:before {
+        content: '';
+        width: 60%;
+        height: 60%;
+        background-color: @brand-primary;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translateZ(-300px) scale(1.5);
+      }
+      @media @desktop-large {
+        width: 40%;
+      }
+      @media @desktop {
+        width: 50%;
+      }
+      @media @tablet {
+        width: 60%;
+      }
+      @media @mobile {
+        width: 60%;
+      }
+
+      img {
+        position: relative;
+      }
+    }
+  }
+  .rad-content {
+    padding: @padding-largest * 2;
+    background-color: @brand-secondary;
+    text-align: center;
+    position: relative;
+    @media @tablet {
+      padding: @padding-larger;
+    }
+    .rad-content-wrap {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .rad-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: @padding-largest;
+    padding-bottom: @padding-largest;
+    position: relative;
+    &:after {
+      content: '';
+      width: 50%;
+      border-bottom: 2px solid @gray-darker;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+    }
+
+    .rad-member {
+      border-radius: @border-radius-large;
+      h4, h5 {
+        margin: 0;
+      }
+      h5 {
+        margin-top: @padding-smallest;
+        a {
+          padding-left: @padding-large;
+          text-decoration: none;
+          position: relative;
+          img {
+            width: @padding-base;
+            height: @padding-base;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .rad-member-profile {
+        width: 6em;
+        margin-bottom: @padding-small;
+        border-radius: 50%;
+      }
+    }
+  }
+}
