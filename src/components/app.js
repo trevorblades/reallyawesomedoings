@@ -18,10 +18,10 @@ var App = React.createClass({
     return (
       <div className="rad-app" onScroll={this._onScroll}>
         <div className="rad-cover">
-          <div className="rad-cover-scroll"
+          <h6 className="rad-cover-scroll"
               style={{opacity: 1 - this.state.scrollPosition / (window.innerHeight / 2)}}>
-            <h6>Scroll down</h6>
-          </div>
+            Scroll down
+          </h6>
           <div className="rad-cover-logo">
             <img src="assets/logo.svg"/>
           </div>
