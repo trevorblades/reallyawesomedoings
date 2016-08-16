@@ -1,5 +1,6 @@
 .rad-app {
   height: 100vh;
+  background-color: @gray-lightest;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
@@ -44,7 +45,7 @@
   }
   .rad-content {
     padding: @padding-largest * 2;
-    background-color: @gray-lightest;
+    background-color: white;
     text-align: center;
     position: relative;
     @media @tablet {
@@ -59,10 +60,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: @padding-largest;
+    margin: @padding-largest 0;
     position: relative;
+    @media @tablet {
+      display: block;
+    }
+
     .rad-member {
+      padding: 0 @padding-large;
       border-radius: @border-radius-large;
+      @media @tablet {
+        padding: @padding-large 0;
+      }
+
       h4, h5 {
         margin: 0;
       }

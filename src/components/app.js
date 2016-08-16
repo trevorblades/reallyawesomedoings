@@ -28,6 +28,10 @@ var App = React.createClass({
           </div>
         </div>
         <div className="rad-content">
+          <div className="rad-content-wrap">
+            <h1>A gang of creatives</h1>
+            <p>RAD is a group of creators with diverse skill sets. We make awesome doings for a living and work on cool projects in our spare time.</p>
+          </div>
           <div className="rad-members">
             {members.map(function(member, index) {
               return (
@@ -45,10 +49,6 @@ var App = React.createClass({
                 </div>
               );
             })}
-          </div>
-          <div className="rad-content-wrap">
-            <h1>A gang of creatives</h1>
-            <p>Really Awesome Doings is a group of creators with diverse skill sets. We make awesome doings for a living and work on cool projects in our spare time.</p>
           </div>
         </div>
       </div>
