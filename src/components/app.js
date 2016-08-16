@@ -3,10 +3,25 @@ var React = require('react');
 var Members = require('./members');
 
 var App = React.createClass({
+
+  getInitialState: function() {
+    return {
+      scrollPosition: 0
+    };
+  },
+
+  _onScroll: function(event) {
+    this.setState({scrollPosition: event.target.scrollTop});
+  },
+
   render: function() {
     return (
-      <div className="rad-app">
+      <div className="rad-app" onScroll={this._onScroll}>
         <div className="rad-cover">
+          <div className="rad-cover-scroll"
+              style={{opacity: 1 - this.state.scrollPosition / (window.innerHeight / 2)}}>
+            <h6>Scroll down</h6>
+          </div>
           <div className="rad-cover-logo">
             <img src="assets/logo.svg"/>
           </div>
